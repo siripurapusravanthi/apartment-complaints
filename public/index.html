@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartment Complaints</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Apartment Complaints</h1>
+  <div id="staffBox">
+    <button id="loginToggle">Staff login</button>
+    <span id="staffName" class="hidden"></span>
+    <button id="logoutBtn" class="hidden">Logout</button>
+  </div>
+</header>
+
+<form id="loginForm" class="card hidden">
+  <input id="username" placeholder="Username" required>
+  <input id="password" type="password" placeholder="Password" required>
+  <button type="submit">Login</button>
+  <p id="loginMsg" class="msg"></p>
+</form>
+
+<main>
+  <form id="reportForm" class="card">
+    <h2>Report a problem</h2>
+    <div class="row">
+      <input id="flat" placeholder="Flat no. (e.g. 204)" required>
+      <input id="floor" placeholder="Floor (e.g. 2)" required>
+    </div>
+    <p class="label">Tap the problems you are facing:</p>
+    <div id="chips" class="chips"></div>
+    <textarea id="other" placeholder="Something else? Type it here"></textarea>
+    <button type="submit">Send complaint</button>
+    <p id="reportMsg" class="msg"></p>
+  </form>
+
+  <h2>All complaints</h2>
+  <div id="list"></div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
