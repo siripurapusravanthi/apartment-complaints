@@ -1,6 +1,6 @@
 :root { --bg:#f4f6f8; --card:#fff; --ink:#1f2a33; --muted:#66727d; --blue:#1b5fa8; --line:#dbe2e8; --red:#b3402a; --amber:#8a6100; --green:#1c7a4d; }
 * { box-sizing: border-box; }
-body { margin:0; font-family:"Segoe UI",system-ui,sans-serif; background:var(--bg); color:var(--ink); }
+body { margin:0; font-family:"Segoe UI","Nirmala UI",system-ui,sans-serif; background:var(--bg); color:var(--ink); }
 header { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; padding:14px 20px; background:var(--blue); color:#fff; }
 header h1 { margin:0; font-size:1.25rem; }
 #staffBox { display:flex; align-items:center; gap:8px; }
@@ -16,7 +16,7 @@ form button, .btn { background:var(--blue); color:#fff; border:none; padding:9px
 input:focus, textarea:focus, select:focus, button:focus-visible { outline:2px solid var(--blue); outline-offset:1px; }
 .label { margin:12px 0 6px; color:var(--muted); }
 .chips { display:flex; flex-wrap:wrap; gap:8px; }
-.chip { background:#fff; border:1px solid var(--line); border-radius:18px; padding:7px 14px; cursor:pointer; font:inherit; }
+.chip { background:#fff; color:var(--ink); border:1px solid var(--line); border-radius:18px; padding:7px 14px; cursor:pointer; font:inherit; }
 .chip.on { background:var(--blue); color:#fff; border-color:var(--blue); }
 .msg { margin:8px 0 0; color:var(--red); min-height:1em; }
 .hidden { display:none; }
@@ -38,3 +38,5 @@ input:focus, textarea:focus, select:focus, button:focus-visible { outline:2px so
 .step.done { color:var(--green); border-top-color:var(--green); font-weight:600; }
 .dot { display:inline-flex; align-items:center; justify-content:center; width:20px; height:20px; border-radius:50%; border:1px solid currentColor; font-size:.75rem; }
 .step.done .dot { background:var(--green); color:#fff; border-color:var(--green); }
+
+.lang-select { flex:none; width:auto; padding:5px 8px; background:#fff; color:var(--ink); border:1px solid #fff; border-radius:6px; cursor:pointer; }
