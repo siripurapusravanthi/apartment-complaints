@@ -2,7 +2,10 @@
   "name": "apartment",
   "version": "1.0.0",
   "main": "server.js",
-  "scripts": { "start": "node server.js" },
+  "scripts": {
+    "start": "node server.js",
+    "build": "npm install --prefix client && npm run build --prefix client"
+  },
   "dependencies": {
     "express": "^4.19.2",
     "mongoose": "^8.5.0"
